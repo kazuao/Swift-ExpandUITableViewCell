@@ -13,6 +13,7 @@
 		5E8B388026F1727A00AB25B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8B387E26F1727A00AB25B9 /* Main.storyboard */; };
 		5E8B388226F1727B00AB25B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8B388126F1727B00AB25B9 /* Assets.xcassets */; };
 		5E8B388526F1727B00AB25B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8B388326F1727B00AB25B9 /* LaunchScreen.storyboard */; };
+		5E8B389126F1785200AB25B9 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8B389026F1785200AB25B9 /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5E8B388126F1727B00AB25B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8B388426F1727B00AB25B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E8B388626F1727B00AB25B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8B389026F1785200AB25B9 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		5E8B387726F1727A00AB25B9 /* ExpandUITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				5E8B387826F1727A00AB25B9 /* AppDelegate.swift */,
-				5E8B387A26F1727A00AB25B9 /* SceneDelegate.swift */,
-				5E8B387C26F1727A00AB25B9 /* ViewController.swift */,
-				5E8B387E26F1727A00AB25B9 /* Main.storyboard */,
-				5E8B388126F1727B00AB25B9 /* Assets.xcassets */,
-				5E8B388326F1727B00AB25B9 /* LaunchScreen.storyboard */,
-				5E8B388626F1727B00AB25B9 /* Info.plist */,
+				5E8B388C26F1781B00AB25B9 /* Application */,
+				5E8B388E26F1782700AB25B9 /* Controllers */,
+				5E8B388F26F1782F00AB25B9 /* Models */,
+				5E8B388D26F1782200AB25B9 /* Resource */,
 			);
 			path = ExpandUITableViewCell;
+			sourceTree = "<group>";
+		};
+		5E8B388C26F1781B00AB25B9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5E8B388326F1727B00AB25B9 /* LaunchScreen.storyboard */,
+				5E8B387826F1727A00AB25B9 /* AppDelegate.swift */,
+				5E8B387A26F1727A00AB25B9 /* SceneDelegate.swift */,
+				5E8B388626F1727B00AB25B9 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5E8B388D26F1782200AB25B9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5E8B388126F1727B00AB25B9 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5E8B388E26F1782700AB25B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E8B387C26F1727A00AB25B9 /* ViewController.swift */,
+				5E8B387E26F1727A00AB25B9 /* Main.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E8B388F26F1782F00AB25B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E8B389026F1785200AB25B9 /* Section.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8B387D26F1727A00AB25B9 /* ViewController.swift in Sources */,
+				5E8B389126F1785200AB25B9 /* Section.swift in Sources */,
 				5E8B387926F1727A00AB25B9 /* AppDelegate.swift in Sources */,
 				5E8B387B26F1727A00AB25B9 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = ExpandUITableViewCell/Info.plist;
+				INFOPLIST_FILE = ExpandUITableViewCell/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = ExpandUITableViewCell/Info.plist;
+				INFOPLIST_FILE = ExpandUITableViewCell/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
